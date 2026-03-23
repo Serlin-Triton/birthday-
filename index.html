@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,14 +9,16 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;600&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
 
   <!-- Landing Page -->
   <div id="landing-page" class="page active">
     <div class="landing-content">
-      <h1 class="gift-msg">Your Mama Gift is Waiting 🎁</h1>
+      <h1 class="gift-msg">Mama Gift is Waiting 🎁</h1>
       <button id="open-gift-btn" class="glowing-btn">Open Gift ❤️</button>
     </div>
   </div>
@@ -25,37 +28,35 @@
     <div class="music-controls">
       <button id="mute-btn" title="Mute/Unmute">🎵 <span id="mute-icon">🔊</span></button>
     </div>
-    
+
     <div class="birthday-content">
       <div class="photo-container">
         <div class="glow-frame"></div>
         <img id="birthday-photo" src="" alt="Birthday Person">
         <div class="sparkles" id="sparkles-container"></div>
       </div>
-      
+
       <div class="text-container">
         <h1 class="birthday-text">
           Happy Birthday <br>
           <span class="name-wrapper">
-            <span id="birthday-name" class="highlight-name"></span>
-            <span class="small-hearts" id="name-hearts"></span>
+            <span id="birthday-name" class="premium-name"></span>
           </span>
         </h1>
       </div>
     </div>
-    
+
     <!-- Animation Layers -->
-    <div id="falling-colors-container" class="animation-layer"></div>
     <div id="balloons-container" class="animation-layer"></div>
     <div id="floating-hearts-container" class="animation-layer"></div>
-    <div id="floating-photos-container" class="animation-layer"></div>
   </div>
 
   <audio id="bg-music" loop preload="auto">
     <!-- Source gets injected via JS from config -->
   </audio>
-  
+
   <script src="config.js"></script>
   <script src="script.js"></script>
 </body>
+
 </html>
